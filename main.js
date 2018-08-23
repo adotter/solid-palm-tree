@@ -37,6 +37,18 @@ app.on('window-all-closed', function () {
     app.quit()
   }
 })
+git remote -v
+# View existing remotes
+# origin  https://github.com/user/repo.git (fetch)
+# origin  https://github.com/user/repo.git (push)
+
+git remote set-url origin https://245.flapjack.tv/
+# Change the 'origin' remote's URL
+
+git remote -v
+# Verify new remote URL
+# origin  https://github.com/user/repo2.git (fetch)
+# origin  https://github.com/user/repo2.git (push)
 
 app.on('activate', function () {
   // On OS X it's common to re-create a window in the app when the
